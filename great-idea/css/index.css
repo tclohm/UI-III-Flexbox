@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    background-color: clear;
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,3 +65,275 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/*div {
+	border: 2px solid red;
+}*/
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.nav-container {
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+	width: 100%;
+	background: white;
+	/*background: rgb(218,16,179);
+	background: linear-gradient(270deg, rgba(218,16,179,1) 0%, rgba(242,249,71,1) 48%, rgba(0,255,230,1) 94%);*/
+	z-index: 1;
+}
+
+.nav-item {
+	/*display: flex;*/
+	margin: 20px 2.7%;
+	text-decoration: none;
+	color: lightslategrey;
+	background-color: clear;
+}
+
+.nav-item:hover {
+	color: black;
+}
+
+.nav-logo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: clear;
+	padding-left: 100px;
+}
+
+/* banner after navigation */
+
+.banner {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 600px;
+	
+	border-bottom: 1px solid black;
+}
+
+.innovation-card-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 55%;
+	height: 60%;
+	
+	top: 25%;
+
+	text-align: center;
+	font-size: 80px;
+}
+
+.innovation-card-left .get-started-btn {
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	width: 40%;
+	padding: 8px 15px;
+	text-decoration: none;
+	color: black;
+	font-size: 17px;
+}
+
+
+.get-started-btn:hover {
+	background-color: black;
+	color: white;
+}
+
+
+.img-card-right {
+	background-image: url("../img/header-img.png");
+	height: 400px;
+	width: 400px;
+	display: inline-block;
+	background-color: clear;
+	right: 0%;
+	top: 18%;
+
+	background-repeat: no-repeat;
+
+}
+
+
+.two-columns, .three-columns {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 200px;
+}
+
+#features, #about {
+	width: 45%;
+	top: 25%;
+}
+
+.one-column {
+	display: flex;
+	justify-content: center;
+}
+
+.image-python-code {
+	background-image: url("../img/mid-page-accent.jpg");
+	height: 186px;
+	width: 66%;
+	/*margin: 0 auto;*/
+	background-repeat: no-repeat;
+}
+
+.three-columns {
+	height: 250px;
+	border-bottom: 1px solid black;
+}
+
+
+#services, #product, #vision {
+	width: 33%;
+	height: 70%;
+	top: 25%;
+}
+
+#vision {
+	right: 0%;
+}
+
+
+#contact {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 200px;
+	margin: 40px 0 0 0;
+}
+
+
+/* services.html */
+
+.service-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 60px;
+	padding-bottom: 30px;
+	border-bottom: 2px solid black;
+}
+
+.image-service img {
+	justify-content: center;
+}
+
+.service-container #service {
+	margin-top: 30px;
+}
+
+.service-container #service h2{
+	font-size: 30px;
+}
+
+.material-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 40px 0 10px 0;
+}
+
+.material-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 15px;
+	width: 48%;
+	height: 230px;
+	border: 2px solid black;
+	background-color: whitesmoke;
+}
+
+.material-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.learn-more-btn {
+	height: 10%;
+	width: 40%;
+	border: 1px solid black;
+
+	text-align: center;
+	text-decoration: none;
+	color: black;
+
+	background-color: white;
+
+	border-radius: 5px;
+	padding: 10px 20px;
+	margin-top: 20px;
+}
+
+.learn-more-btn:hover {
+	background-color: black;
+	color: white;
+}
+
+.footer-container {
+	flex-direction: row;
+	padding: 50px 0;
+	border-top: 2px solid black;
+}
+
+.footer-item {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-item ul {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.footer-content {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+}
+
+.footer-item img {
+	width: 440px;
+}
+
+li {
+	list-style-type: square;
+	margin-top: 15px;
+}
+
+footer {
+	height: 100px;
+}
+
+footer p {
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Rubik Mono One', sans-serif;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+}
